@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+display: flex;
+justify-content: center;
+text-align: center;
+align-items: center;
+min-height: 100vh;
+background-color: antiquewhite;
+
+
+
+}
+.main{
+    background-color: white;
+    border: 1px solid lightblue;
+    border-radius: 7px;
+    height: 8vh;
+    width: 50vh;
+    color: black;
+    margin-top: 10px;
+    padding: 3px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 10px;
+    
+}
+form{
+    background-color: aqua;
+    width: 25vw ;
+    height: 55vh;
+    border: 2px solid lightblue;
+    border-radius: 4px;
+    
+}
+form .buttons{
+    width: 300px;
+    margin: 10px 25px 0 25px;
+    padding: 10px 0;
+}
+input[type="button"]{
+    width: 55px;
+    height: 50px;
+    margin: 5px;
+    font-size: 22px;
+    
+    line-height: 55px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+input[type="button"]:hover{
+    transition: .5s;
+    background-color:grey;
+}
+#clear{
+    background-color: red;
+    border: 2px solid red;
+    color: white;
+
+}
+#equal{
+    width: 275px;
+    margin: 10px 0 10px 0;
+    font-size: 30px;
+    color: white;
+    background-color: red;
+    border: 2px solid red;
+}
+@media only screen and (max-width: 600px) {
+    .main {
+        width: 80%;
+        font-size: 1.5em;
+    }
+    form {
+        width: 80%;
+    }
+    input[type="button"] {
+        width: 40px;
+        height: 35px;
+        font-size: 1em;
+        line-height: 35px;
+    }
+    #equal {
+        width: 100%;
+        font-size: 1.5em;
+    }
+}
